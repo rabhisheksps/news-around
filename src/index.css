@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.news-card{
+  border: 0.4px gray solid;
+}
+.news-card:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
