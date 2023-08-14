@@ -13,6 +13,7 @@ code {
 }
 .news-card{
   border: 0.4px gray solid;
+  height: auto;
 }
 .news-card:hover {
   transform: scale(1.1);
