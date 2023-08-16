@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import moment from 'moment'
 
 export default class NewsItem extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class NewsItem extends Component {
             </span></h5> */}
             <h5 className="card-title" style={{height: "auto"}}>{title}</h5>
             <p className="card-text" style={{height: "auto"}}>{description.slice(0, 95)}...</p>
-            <p className="card-text" style={{height: "auto"}}><small className="text-danger">By {author?author:"Unkown"} on {new Date(date).toGMTString()}</small></p>
+            <p className="card-text" style={{height: "auto"}}><small className="text-danger">By {author?author:"Unkown"} on {moment(date).format("DD/MM/YYYY, h:mm a")}</small></p>
             <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">Read More</a>
           </div>
         </div>
