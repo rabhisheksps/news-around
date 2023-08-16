@@ -13,9 +13,14 @@ code {
 }
 .news-card{
   border: 0.4px gray solid;
-  height: auto;
+  height: 550px;
 }
-.news-card:hover {
+/* .news-card:hover {
   transform: scale(1.1);
   opacity: 0.8;
+} */
+.source{
+  position: absolute;
+  top: -12px;
+  right: -8px !important;
 }
